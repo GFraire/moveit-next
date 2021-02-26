@@ -38,3 +38,50 @@
   font-size: 6.25rem;
   margin: 0 .5rem;
 }
+
+.countDownButton {
+  width: 100%;
+  height: 5rem;
+
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 5px;
+
+  background-color: var(--blue);
+  color: var(--white);
+
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.countDownButton > img {
+  margin-left: 1rem;
+  height: 1.4rem;
+}
+
+.countDownButton:not(:disabled):hover {
+  background-color: var(--blue-dark);
+}
+
+.countDownButtonActive {
+  background-color: var(--white);
+  color: var(--title);
+}
+
+.countDownButtonActive:not(:disabled):hover {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.countDownButton:disabled {
+  background-color: var(--white);
+  color: var(--text);
+  cursor: not-allowed;
+  box-shadow: 0px 4px 0px 0px var(--dark-green);
+}
