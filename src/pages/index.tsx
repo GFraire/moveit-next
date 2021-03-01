@@ -11,7 +11,6 @@ import { ChallengeBox } from "../components/ChallengeBox";
 import styles from "../styles/pages/Home.module.css"
 import { CountDownProvider } from "../contexts/CountDownContext";
 import { ChallengesProvider } from "../contexts/ChallengesContexts";
-import { LevelUpModal } from "../components/LevelUpModal";
 
 interface HomeProps {
   level: number
